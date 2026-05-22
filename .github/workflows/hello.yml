@@ -10,4 +10,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: testing-hello
-              run: echo "Hello"
+              run: ls
+            - name: git
+              uses: actions/checkout@v4
+            - name: list
+              run: ls
